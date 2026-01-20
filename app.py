@@ -5,11 +5,14 @@ import plotly.express as px
 st.set_page_config(page_title="Exoplaneten", page_icon="🪐", layout="wide")
 st.title("Exoplaneten")
 st.markdown(
-    """ Diese App analysiert [dein Thema] und erstellt 
-Vorhersagen.
-👈 **Wähle eine Seite im Sidebar!** """
+    """ 
+        Diese Anwendung ermöglicht eine interaktive Untersuchung eines Teils des **[NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/)** (DOI: [10.26133/NEA12](https://doi.org/10.26133/NEA12)).  
+        Im Fokus steht die Analyse der physikalischen Eigenschaften von Exoplaneten und die Identifikation des Selection Bias in den Entdeckungsdaten.
+        
+        **:material/arrow_left_alt: Bitte wähle zur Navigation eine der Seiten in der Sidebar aus!**
+    """
 )
-
+st.caption("This research has made use of the NASA Exoplanet Archive, which is operated by the California Institute of Technology, under contract with the National Aeronautics and Space Administration under the Exoplanet Exploration Program.")
 
 @st.cache_data
 def load_data():
